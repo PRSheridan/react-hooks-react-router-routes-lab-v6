@@ -27,11 +27,11 @@ function Actors() {
 
   return (
     <>
+      <h1>Actors Page</h1>
       <header>
         <NavBar />
       </header>
       <main>
-        <h1>Actors Page</h1>
         {actorList}
       </main>
     </>

@@ -20,11 +20,11 @@ function Movie() {
 
   return (
     <>
+      <h1>{movie.title}</h1>
       <header>
         <NavBar />
       </header>
       <main>
-        <h1>{movie.title}</h1>
         <p>{`Length: ${movie.time} Minutes`}</p>
         {genreList}
       </main>
