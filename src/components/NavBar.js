@@ -7,18 +7,17 @@ function NavBar() {
       <NavLink 
           to="/"
           className="nav-link"
-      />
-      Home
+      >Home</NavLink>
+
       <NavLink  
           to="/directors"
           className="nav-link"
-      />
-      Directors
+      >Directors</NavLink>
+      
       <NavLink  
           to="/actors"
           className="nav-link"
-      />
-      Actors
+      >Actors</NavLink>
     </nav>
     );
 };

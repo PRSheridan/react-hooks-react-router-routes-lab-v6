@@ -2,25 +2,29 @@ import Home from "./pages/Home"
 import Directors from "./pages/Directors"
 import Actors from "./pages/Actors"
 import Movie from "./pages/Movie"
+import ErrorPage from "./pages/ErrorPage"
 
 const routes = [
   {
     path: '/',
-    element: <Home />
+    element: <Home />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/directors',
-    element: <Directors />
+    element: <Directors />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/actors',
-    element: <Actors />
+    element: <Actors />,
+    errorElement: <ErrorPage />
   },
   {
     path: '/movie/:id',
-    element: <Movie />
+    element: <Movie />,
+    errorElement: <ErrorPage />
   },
-   
   ];
 
 export default routes;

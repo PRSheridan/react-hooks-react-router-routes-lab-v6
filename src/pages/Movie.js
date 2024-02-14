@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import NavBar from "../components/NavBar";
 
 function Movie() {
   const [movie, setMovie] = useState({});
@@ -13,13 +14,19 @@ function Movie() {
     .catch(error => console.error(error))
   }, [movieId])
 
+  let genreList = movie.genres?.map(genre => {
+    return <span key={genre}>{genre}</span>
+  })
+
   return (
     <>
-      <header></header>
+      <header>
+        <NavBar />
+      </header>
       <main>
         <h1>{movie.title}</h1>
-        <p>{movie.time}</p>
-        {"test"}
+        <p>{`Length: ${movie.time} Minutes`}</p>
+        {genreList}
       </main>
     </>
   );
